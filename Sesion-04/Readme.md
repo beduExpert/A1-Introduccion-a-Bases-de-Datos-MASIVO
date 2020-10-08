@@ -49,7 +49,7 @@ Para realizar consultas u otras operaciones en __MongoDB__ debe usarse este leng
 - `{campo: 0}`
 - `{campo: 1}`
 
-> *Realizar ejemplos de construcción de __JSON__, mostrar las colecciones de la base de datos del módulo y mostrar algunas colecciones en formato __JSON__. Explicar en qué parte de Compass hacer proyecciones.*
+> *Realizar ejemplos de construcción de __JSON__, mostrar las colecciones de la base de datos del módulo y mostrar algunas colecciones en formato __JSON__. Explicar a grandes rasgos las diferencias entre bases de datos relacionales y no relacionales. Cuándo y por qué usar una o la otra. Explicar en qué parte de Compass hacer proyecciones.*
 
 - [**`EJEMPLO 2`**](Ejemplo-02/Readme.md)
 - [**`RETO 1`**](Reto-01/Readme.md)	
@@ -71,16 +71,11 @@ Al igual que con las proyecciones, los filtros se construyen usando __JSON__. En
 
 ---
 
-### 3. Proyecto :hammer:
+### 3. Ejercicios :hammer:
 
-Aplica lo todo lo que aprendiste durante la sesión en este proyecto. 
+Aplica lo todo lo que aprendiste durante la sesión en estos ejercicios. 
 
-- [**`PROYECTO SESIÓN 4`**](Proyecto/Readme.md)
-
-### 4. Postwork :memo:
-Aplica lo todo lo que aprendiste durante la sesión a tu proyecto personal.
-
-- [**`POSTWORK SESIÓN 4`**](Postwork/Readme.md)
+- [**`EJERCICIOS SESIÓN 4`**](Ejercicios/Readme.md)
 
 </br>
 

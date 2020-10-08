@@ -71,29 +71,11 @@ La cláusula `GROUP BY` es usada dentro de la instrucción SELECT para recolecta
 
 ---
 
-#### <ins>Subconsultas</ins>
+### 3. Ejercicios de práctica :hammer:
 
-<img src="imagenes/imagen4.png" align="right" height="150" width="250">
+Aplica lo todo lo que aprendiste durante la sesión en estos ejercicios. 
 
-Una subconsulta es una consulta que se encuentra dentro de otra. Estas subconsultas pueden aparecer en las cláusulas, WHERE, FROM y en el área de campos de SELECT.  
-
-> Explicar qué es una subconsulta, en qué consiste, y cómo se puede usar en un WHERE, FROM y SELECT.
-
-- [**`EJEMPLO 4`**](Ejemplo-04/Readme.md)
-- [**`RETO 4`**](Reto-04/Readme.md)	
-
----
-
-### 3. Proyecto :hammer:
-
-Aplica lo todo lo que aprendiste durante la sesión en este proyecto. 
-
-- [**`PROYECTO SESIÓN 2`**](Proyecto/Readme.md)
-
-### 4. Postwork :memo:
-Aplica lo todo lo que aprendiste durante la sesión a tu proyecto personal.
-
-- [**`POSTWORK SESIÓN 2`**](Postwork/Readme.md)
+- [**`EJERCICIOS SESIÓN 2`**](Ejercicios/Readme.md)
 
 </br>
 

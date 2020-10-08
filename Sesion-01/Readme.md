@@ -79,16 +79,11 @@ Una vez obtenidos los datos requeridos mediante una consulta, es posible ordenar
 
 ---
 
-### 3. Proyecto :hammer:
+### 3. Ejercicios de práctica :hammer:
 
-Aplica lo todo lo que aprendiste durante la sesión en este proyecto. 
+Aplica lo todo lo que aprendiste durante la sesión en estos ejercicios. 
 
-- [**`PROYECTO SESIÓN 1`**](Proyecto/Readme.md)
-
-### 4. Postwork :memo:
-Aplica lo todo lo que aprendiste durante la sesión a tu proyecto personal.
-
-- [**`POSTWORK SESIÓN 1`**](Postwork/Readme.md)
+- [**`EJERCICIOS SESIÓN 1`**](Ejercicios/Readme.md)
 
 <br/>
 
