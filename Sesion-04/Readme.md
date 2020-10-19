@@ -12,7 +12,7 @@
 - Realizar consultas básicas que permitan filtrar documentos, ordenar y limitar los resultados
 
 ### 2. Contenido :blue_book:
-
+    
 ---
 #### <ins>Conexión a __MongoDB__</ins>
 <img src="imagenes/imagen1.png" align="right" height="200" width="200">
@@ -28,12 +28,12 @@ Para conectarnos a mongo haremos uso del cliente __MongoDB Compass__ este client
 
 Para conectarnos con un servidor de bases de datos de __MongoDB__ debe usar, al igual que con __MySQL__ la arquitectura cliente servidor.
 
-> *Platicar brevemente qué es MongoDB y MongoDB Compass. Repasar el modelo cliente-servidor.*
+> *Platicar brevemente qué es MongoDB Compass. Repasar el modelo cliente-servidor.*
 
 - [**`EJEMPLO 1`**](Ejemplo-01/Readme.md)
 
 ---
-#### <ins>Colecciones, Documentos y Proyecciones</ins>
+#### <ins>El formato __JSON__</ins>
 <img src="imagenes/imagen2.jpg" align="right" height="200" width="300">
 
 En __MongoDB__ los datos son almacenados en *colecciones* que incluyen documentos. Estos documentos se representan usando el formato de intercambio de información __JSON__. Un __JSON__ se conforma de un conjunto de elementos de la forma *clave-valor* separados por comas y delmitados por llaves. Los tipos de datos de __JSON__ son:
@@ -43,13 +43,31 @@ En __MongoDB__ los datos son almacenados en *colecciones* que incluyen documento
 - Cadenas
 - Arreglos
 - Objetos
+    
+> *Realizar ejemplos de construcción de __JSON__.*
+    
+---
+#### <ins>Entonces, ¿qué es __MongoDB__?</ins>
+<img src="imagenes/imagen1.png" align="right" height="200" width="200">
 
-Para realizar consultas u otras operaciones en __MongoDB__ debe usarse este lenguaje. En particular, para realizar proyecciones, se usa __JSON__. Se indica el campo a proyectar y se coloca un uno si queremos mostrarlo o cero en caso contrario.
+- Bases de Datos No Relacional
+- Formato JSON
+- Colecciones que contienen documentos
+- Documentos de esquema libre
+- Más localidad, menos joins
+- Denormalizada, hay redundancia
+- Documentos son similares a objetos
+- Ejemplos: MongoDB, Cassandra, Redis, Oracle NoSQL, Amazon DynamoDB, CouchDB, Cloud Firestore
+    
+---
+#### <ins>Colecciones, Documentos y Proyecciones</ins>
+
+Para realizar consultas u otras operaciones en __MongoDB__ debe usarse el formato JSON. Se indica el campo a proyectar y se coloca un uno si queremos mostrarlo o cero en caso contrario.
 
 - `{campo: 0}`
 - `{campo: 1}`
 
-> *Realizar ejemplos de construcción de __JSON__, mostrar las colecciones de la base de datos del módulo y mostrar algunas colecciones en formato __JSON__. Explicar a grandes rasgos las diferencias entre bases de datos relacionales y no relacionales. Cuándo y por qué usar una o la otra. Explicar en qué parte de Compass hacer proyecciones.*
+> *Mostrar las colecciones de la base de datos del módulo y mostrar algunas colecciones en formato __JSON__. Explicar en qué parte de Compass hacer proyecciones.*
 
 - [**`EJEMPLO 2`**](Ejemplo-02/Readme.md)
 - [**`RETO 1`**](Reto-01/Readme.md)	
