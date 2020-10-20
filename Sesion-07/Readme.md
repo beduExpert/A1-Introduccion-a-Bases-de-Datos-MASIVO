@@ -103,26 +103,6 @@ Al igual que en __MySQL__ es posible cargar los datos usando formatos de interca
 - [**`EJEMPLO 6`**](Ejemplo-06/Readme.md)
 - [**`RETO 3`**](Reto-03/Readme.md)
 
----
-##### <ins>Realizando operaciones con Documentos</ins>
-<img src="imagenes/imagen7.jpg" align="right" height="200" width="300">
-
-Una vez creada una colección, ya sea mediante la carga masiva de datos o de forma vacía. Es posible modificar los documento que se almacenan ahí. Es posible:
-
-1. Agregar documentos
-1. Editar documentos
-1. Eliminar documentos
-
-- [**`EJEMPLO 7`**](Ejemplo-07/Readme.md)
-
----
-
-### 3. Ejercicios :hammer:
-
-Aplica todo lo que aprendiste durante la sesión en estos ejercicios. 
-
-- [**`EJERCICIOS SESIÓN 7`**](Ejercicios/Readme.md)
-
 </br>
 
 [`Anterior`](../Sesion-06/Readme.md) | [`Siguiente`](../Sesion-08/Readme.md)
