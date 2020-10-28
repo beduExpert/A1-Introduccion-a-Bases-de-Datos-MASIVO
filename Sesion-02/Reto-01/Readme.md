@@ -19,6 +19,8 @@ Usando la base de datos `tienda`, escribe consultas que permitan responder las s
 - ¿Qué artículos incluyen la palabra `Pasta` en su nombre?
 - ¿Qué artículos incluyen la palabra `Cannelloni` en su nombre?
 - ¿Qué nombres están separados por un guión (`-`) por ejemplo `Puree - Kiwi`?
+- ¿Qué puestos incluyen la palabra `Designer`?
+- ¿Qué puestos incluyen la palabra `Developer`?
 
 <details><summary>Solución</summary>
 <p>
@@ -49,6 +51,22 @@ Usando la base de datos `tienda`, escribe consultas que permitan responder las s
    WHERE nombre LIKE '% - %';
    ```
    ![imagen](imagenes/s2wr13.png) 
+    
+- ¿Qué puestos incluyen la palabra `Designer`?
+    
+   ```sql
+   SELECT *
+   FROM puesto 
+   WHERE nombre LIKE "%Designer%";
+   ```
+    
+- ¿Qué puestos incluyen la palabra `Developer`?
+    
+   ```sql
+   SELECT *
+   FROM puesto 
+   WHERE nombre LIKE "%Developer%";
+   ```
 
 </p>
 </details>
