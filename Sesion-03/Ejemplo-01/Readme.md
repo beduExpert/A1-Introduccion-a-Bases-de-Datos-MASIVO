@@ -17,8 +17,36 @@
 1. Abre MySQL Wokbench y conectate a la base de datos del curso.
 
 2. Una subconsulta es una consulta dentro de otra. Puede crear sunconsultas en SQL y pueden aparecer en la cláusula `WHERE`, `FROM` o `SELECT`. Veamos algunos ejemplos.
+    
+   *Usando `WHERE` + `>`*
+    
+   ¿Cuál es la suma del salario de los últimos cinco puestos agregados?
 
-   *Usando `WHERE`*
+   Primero obtenemos el ídentificador que nos permite saber eso.
+   
+   ```sql
+   SELECT max(id_puesto) - 5
+   FROM puesto;
+   ```  
+  
+Usamos ese identificador ahora.
+
+    
+   ```sql
+   SELECT sum(salario)
+   FROM puesto
+   WHERE id_puesto > 995;
+   ```  
+  
+Usando una subconsulta lo podríamos hacer de la siguiente manera:
+    
+   ```sql
+   SELECT sum(salario)
+   FROM puesto
+   WHERE id_puesto > (SELECT max(id_puesto) - 5 FROM puesto);
+   ```  
+  
+   *Usando `WHERE` + `IN`*
    
    Queremos los empleados cuyo puesto es `Junior Executive`. Para realizar la subconsulta, descompongamos el problema en partes. Primero necesitamos saber el identificador de los puestos con ese nombre.
 
@@ -69,17 +97,7 @@
    ```
    
    ![imagen](imagenes/s2we44.png)
-   
-   *Usando `SELECT`*
-   
-   Ahora, obtendremos el sueldo de cada empleado usando una subconsulta. Para ello, obtenemos primero el sueldo de cada tipo de empleado y luego lo usamos como subconsulta.
-   
-   ```sql
-   SELECT nombre, apellido_paterno, (SELECT salario FROM puesto WHERE id_puesto = e.id_puesto) AS sueldo
-   FROM empleado AS e;	
-   ```
 
-   ![imagen](imagenes/s2we45.png)
 
 [`Anterior`](../Readme.md#subconsultas) | [`Siguiente`](../Reto-01/Readme.md)            
 

@@ -1,6 +1,6 @@
 [`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 03`](../Readme.md) > `Reto 2`
 	
-## Reto 2: Agrupamientos y subconsultas
+## Reto 2: Joins
 
 <div style="text-align: justify;">
 

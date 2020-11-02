@@ -41,7 +41,7 @@ Para relacionar tablas se incluyen los *joins* que son operadores entre tablas, 
 > *Explicar el concepto de join y las direntes entre cada una de sus variables. Se sugiere <ins>ampliamente</ins> el uso del pizarrón para ejemplificar los resultados después de aplicar estas operaciones.*
 
 - [**`EJEMPLO 2`**](Ejemplo-02/Readme.md)
-- [**`RETO 1`**](Reto-01/Readme.md)	
+- [**`RETO 2`**](Reto-02/Readme.md)	
 
 ---
 
@@ -59,7 +59,7 @@ Las vistas no requieren de almacenamiento adicional y pueden consultar usando la
 > *Explicar el concepto de vista y sus principales ventajas.*
 
 - [**`EJEMPLO 3`**](Ejemplo-03/Readme.md)
-- [**`RETO 2`**](Reto-02/Readme.md)	
+- [**`RETO 3`**](Reto-03/Readme.md)	
 
 ---
 
