@@ -1,6 +1,6 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Ejemplo 3`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Ejemplo 4`
 
-## Ejemplo 3: Filtros básicos
+## Ejemplo 4: Filtros básicos
 
 <div style="text-align: justify;">
 

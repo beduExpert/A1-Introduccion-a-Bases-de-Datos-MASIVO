@@ -1,6 +1,6 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Ejemplo 1`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Ejemplo 2`
 
-## Ejemplo 1: Conexión a MongoDB
+## Ejemplo 2: Conexión a MongoDB
 
 <div style="text-align: justify;">
 
