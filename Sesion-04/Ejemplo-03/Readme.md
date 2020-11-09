@@ -1,14 +1,13 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Ejemplo 3`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Ejemplo 2`
 
-## Ejemplo 3: Filtros básicos
+## Ejemplo 2: Colecciones, Documentos y Proyecciones
 
 <div style="text-align: justify;">
 
 ### 1. Objetivos :dart:
 
-- Usar la opción `FILTER` para filtrar documentos
-- Usar la opción `ORDER` para ordenar documentos
-- Usar la opción `LIMIT` para limitar documentos
+- Usar la interfaz de MongoDB para listar las colecciones y documentos de una base de datos.
+- Realizar filtros por proyección.
 
 ### 2. Requisitos :clipboard:
 
@@ -16,105 +15,39 @@
 
 ### 3. Desarrollo :rocket:
 
-1. Dentro de la colección `movies`, vuelve a dar clic en el botón `OPTIONS`.  Esta vez usaremos el campo `FILTER`, esta opción es equivalente a la cláusula `WHERE` de SQL. Por ejemplo, podemos filtrar todas las películas del año 1993.
+1. Abre MongoDB Compass. En esta primera pantalla se muestran las bases de datos contenidas en el servidor. Da clic en la base de datos `sample_mflix`. A partir de ahora usaremos esa base de datos para los retos y ejemplos dentro de la sesión.
 
-   *Consulta en SQL*
-  
-   ```sql
-   SELECT *
-   FROM movies
-   WHERE year = 1993;
-   ```
-  
-   *Consulta en MongoDB usando JSON*
-  
-   ```json
-   {year: 1993}
-   ```
+   ![imagen](imagenes/s4e21.png)
 
-    ![imagen](imagenes/s4e31.png)
+2. En la ventana que apareció se muestran las **colecciones** para la base de datos que elegiste. También puedes navegar entre las colecciones con el menú desplegable de la izquierda. Da clic en la colección `users`.
+   
+   ![imagen](imagenes/s4e22.png)
 
-2. Al igual que en SQL, tenemos operadores relacionales, por ejemplo queremos todas las películas de los años 2000.
+3. Ahora estás apreciando los documentos que hay dentro de la colección `users`. En el menú que se encuentra sobre los documentos, puedes cambiar el formato en que se muestran, por defecto, la forma de visualizarlos es en formato de lista aunque hay otras opciones como JSON o formato de tabla como en SQL.
 
-   *Consulta en SQL*
+   ![imagen](imagenes/s4e23.png)
    
-   ```sql
-   SELECT *
-   FROM movies
-   WHERE year >= 2000;
-   ```
-   
-   *Consulta en MongoDB usando JSON*
-   
-   ```json
-   {year: {$gte: 2000}}
-   ```
-   
-   *Observación:* Las operaciones de MongoDB siempre aparecen precedidas del símbolo `$`.
-   
-   ![imagen](imagenes/s4e32.png)
-
-3. También tenemos las operaciones lógica. Por ejemplo, si quisiéramos las películas comprendidas entre el año 2012 y 2019.
-
-   *Consulta en SQL*
-   
-   ```sql
-   SELECT *
-   FROM movies
-   WHERE year >= 2012
-     AND year <= 2019;
-   ```
-   
-   *Consulta en MongoDB usando JSON*
-   
-   ```json
-   {$and: [{year: {$gte: 2012}},{year: {$lte: 2019}}]}
-   ```
-   
-   *Observación:* Las operaciones que reciben más de un argumento, usan arreglos para separar los mismos.
-
-   ![imagen](imagenes/s4e33.png)
-   
-   Para conocer más operaciones de este tipo, revisa la [documentación de MongoDB](https://docs.mongodb.com/manual/reference/operator/query/). 
-   
-4. Para ordenar, usaremos la opción `SORT`. Para ordenar, hay que agregar un JSON con el nombre de los campos por los cuales se desea ordenar y agregar un valor 1 si se desea ordenar ascendentemente o -1 para un ordenamiento descendente. Por ejemplo, ordenaremos las películas por año.
-
-   *Consulta en SQL*
+4. Por defecto, la interfaz de MongoDB Compass muestra todos los campos de todos los documentos, esto es equivalente a ejecutar la instrucción de SQL:
 
    ```sql
    SELECT *
-   FROM movies
-   ORDER BY year ASC;
+   FROM users;
    ```
    
-   *Consulta en MongoDB usando JSON*
+   Para mostrar algún campo en específico, como lo hacíamos en SQL, usaremos proyecciones. Para usar una proyección, hay que dar clic en el botón `OPTIONS`. Se abrirá un formulario, llenaremos el campo llamado `PROJECT`. 
+   
+   En las bases de datos relacionales, la forma de comunicarnos con la base es mediante SQL, en MongoDB lo haremos a través de JSON. De esta forma, para proyectar los datos, usaremos un JSON, separando cada campo deseado, con un valor de 1. Por ejemplo, si queremos obtener únicamente el nombre y correo del usuario, escribimos lo siguiente.
    
    ```json
-   {year: 1}
+   {name:1, email:1}
    ```
    
-   ![imagen](imagenes/s4e34.png)
+   Para mostrar la proyección, damos clic en el botón `FIND`.
    
-    *Consulta en SQL*
+   ![imagen](imagenes/s4e24.png)
 
-   ```sql
-   SELECT *
-   FROM movies
-   ORDER BY year DESC;
-   ```
-   
-   *Consulta en MongoDB usando JSON*
-   
-   ```json
-   {year: -1}
-   ```
-   
-   ![imagen](imagenes/s4e35.png)
-   
-5. Finalmente, para limitar los resultados de una consulta, podemos usar la opción `LIMIT`. Sólo basta con agregar el número deseado. Por ejemplo, las cinco películas de los últimos años.
+**¡Felicidades! Haz realizado tu primera consulta en una base de datos con MongoDB**
 
-   ![imagen](imagenes/s4e36.png)
-
-[`Anterior`](../Readme.md#filtros-básicos) | [`Siguiente`](../Reto-02/Readme.md)
+[`Anterior`](../Readme.md#colecciones-documentos-y-proyecciones) | [`Siguiente`](../Reto-01/Readme.md)
 
 </div>

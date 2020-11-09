@@ -16,14 +16,14 @@
 
 Usando la base de datos `tienda`, escribe consultas que permitan responder las siguientes preguntas.
 
-- ¿Cuál es el nombre de los empleados cuyo sueldo es menor a \$10,000?
+- ¿Cuál es el nombre de los empleados cuyo sueldo es mayor a \$100,000?
 - ¿Cuál es la cantidad mínima y máxima de ventas de cada empleado?
 - ¿Cuáles claves de venta incluyen artículos cuyos precios son mayores a \$5,000?
 
 <details><summary>Solución</summary>
 <p>
 
-- ¿Cuál es el nombre de los empleados cuyo sueldo es menor a $10,000?
+- ¿Cuál es el nombre de los empleados cuyo sueldo es mayor a $100,000?
 
    ```sql
    SELECT nombre, apellido_paterno
@@ -31,7 +31,7 @@ Usando la base de datos `tienda`, escribe consultas que permitan responder las s
    WHERE id_puesto IN
 	(SELECT id_puesto
          FROM puesto
-         WHERE salario > 10000);
+         WHERE salario > 100000);
    ```
    
    ![imagen](imagenes/s2wr41.png)

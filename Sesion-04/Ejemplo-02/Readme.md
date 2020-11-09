@@ -1,13 +1,12 @@
-[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Ejemplo 2`
+[`Introducción a Bases de Datos`](../../Readme.md) > [`Sesión 04`](../Readme.md) > `Ejemplo 1`
 
-## Ejemplo 2: Colecciones, Documentos y Proyecciones
+## Ejemplo 1: Conexión a MongoDB
 
 <div style="text-align: justify;">
 
 ### 1. Objetivos :dart:
 
-- Usar la interfaz de MongoDB para listar las colecciones y documentos de una base de datos.
-- Realizar filtros por proyección.
+- Realizar la conexión a MongoDB mediante el cliente MongoDB Compass.
 
 ### 2. Requisitos :clipboard:
 
@@ -15,39 +14,28 @@
 
 ### 3. Desarrollo :rocket:
 
-1. Abre MongoDB Compass. En esta primera pantalla se muestran las bases de datos contenidas en el servidor. Da clic en la base de datos `sample_mflix`. A partir de ahora usaremos esa base de datos para los retos y ejemplos dentro de la sesión.
+1. Abre MongoDB Compass. En esta primera pantalla se muestran, del lado izquierdo, las conexiones que tienes configuradas o se muestra en blanco en caso de que sea la primera vez que realizas una conexión.
 
-   ![imagen](imagenes/s4e21.png)
+   ![imagen](imagenes/s4e11.png)
 
-2. En la ventana que apareció se muestran las **colecciones** para la base de datos que elegiste. También puedes navegar entre las colecciones con el menú desplegable de la izquierda. Da clic en la colección `users`.
-   
-   ![imagen](imagenes/s4e22.png)
+2. Abajo del título `New Connection`, da clic en el texto que dice `Fill in connection fields individually`. Cambiará el formato de la pantalla. Introduce los datos necesarios para realizar la conexión. Pide al experto que te los proporcione.
 
-3. Ahora estás apreciando los documentos que hay dentro de la colección `users`. En el menú que se encuentra sobre los documentos, puedes cambiar el formato en que se muestran, por defecto, la forma de visualizarlos es en formato de lista aunque hay otras opciones como JSON o formato de tabla como en SQL.
+   - **Hostname:** Dirección del servidor al cuál nos conectaremos.
+   - **Port:** Puerto a través del cual realizaremos la conexión.
+   - **SRV Record:** Dejar apagado.
+   - **Authentication:** Username / Password.
+   - **Username:** Nombre de usuario.
+   - **Password:** Contraseña de acceso.
+   - **Authentication Database:** Base de datos con la que se definió el usuario.
+   
+   ![imagen](imagenes/s4e12.png)
 
-   ![imagen](imagenes/s4e23.png)
-   
-4. Por defecto, la interfaz de MongoDB Compass muestra todos los campos de todos los documentos, esto es equivalente a ejecutar la instrucción de SQL:
+3. Presiona el botón `Connect` y y si obtienes una pantalla como la que se muestra en la siguiente imagen, la conexión se habrá realizado con éxito.
 
-   ```sql
-   SELECT *
-   FROM users;
-   ```
-   
-   Para mostrar algún campo en específico, como lo hacíamos en SQL, usaremos proyecciones. Para usar una proyección, hay que dar clic en el botón `OPTIONS`. Se abrirá un formulario, llenaremos el campo llamado `PROJECT`. 
-   
-   En las bases de datos relacionales, la forma de comunicarnos con la base es mediante SQL, en MongoDB lo haremos a través de JSON. De esta forma, para proyectar los datos, usaremos un JSON, separando cada campo deseado, con un valor de 1. Por ejemplo, si queremos obtener únicamente el nombre y correo del usuario, escribimos lo siguiente.
-   
-   ```json
-   {name:1, email:1}
-   ```
-   
-   Para mostrar la proyección, damos clic en el botón `FIND`.
-   
-   ![imagen](imagenes/s4e24.png)
+   ![imagen](imagenes/s4e13.png)
 
-**¡Felicidades! Haz realizado tu primera consulta en una base de datos con MongoDB**
+**¡Felicidades! Haz realizado tu primera conexión a una base de datos con MongoDB**
 
-[`Anterior`](../Readme.md#colecciones-documentos-y-proyecciones) | [`Siguiente`](../Reto-01/Readme.md)
+[`Anterior`](../Readme.md#conexión-a-mongodb) | [`Siguiente`](../Readme.md#colecciones-documentos-y-proyecciones)
 
 </div>

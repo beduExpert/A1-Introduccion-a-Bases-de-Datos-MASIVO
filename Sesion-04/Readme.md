@@ -14,6 +14,18 @@
 ### 2. Contenido :blue_book:
     
 ---
+##### <ins>Configuración de __MongoDB__ en la nube</ins>
+<img src="imagenes/imagen4.jpg" align="right" height="200" width="300">
+
+Para facilitar la creación de servidores de bases de datos (llamados *clusters* pues se conforman de varios servidores a la vez), __MongoDB__ provee una platadorma que permite crear bases de datos en la nube de forma sencilla. 
+
+Esta plataforma, llamada __Atlas__ permite crear un *cluster* de forma gratuita por lo que lo usaremos para ejemplificar este proceso. Puede utilizarlo también para tu proyecto.
+
+> *Explicar el concepto de base de datos en la nube y su principal diferencia con una base de datos local. Mostrar similudes con el servicio AWS de Amazon.*
+
+- [**`EJEMPLO 1`**](Ejemplo-01/Readme.md)
+    
+---
 #### <ins>Conexión a __MongoDB__</ins>
 <img src="imagenes/imagen1.png" align="right" height="200" width="200">
 
@@ -30,7 +42,7 @@ Para conectarnos con un servidor de bases de datos de __MongoDB__ debe usar, al 
 
 > *Platicar brevemente qué es MongoDB Compass. Repasar el modelo cliente-servidor.*
 
-- [**`EJEMPLO 1`**](Ejemplo-01/Readme.md)
+- [**`EJEMPLO 2`**](Ejemplo-02/Readme.md)
 
 ---
 #### <ins>El formato __JSON__</ins>
@@ -69,7 +81,7 @@ Para realizar consultas u otras operaciones en __MongoDB__ debe usarse el format
 
 > *Mostrar las colecciones de la base de datos del módulo y mostrar algunas colecciones en formato __JSON__. Explicar en qué parte de Compass hacer proyecciones.*
 
-- [**`EJEMPLO 2`**](Ejemplo-02/Readme.md)
+- [**`EJEMPLO 3`**](Ejemplo-03/Readme.md)
 - [**`RETO 1`**](Reto-01/Readme.md)	
 
 ---
@@ -84,7 +96,7 @@ Al igual que con las proyecciones, los filtros se construyen usando __JSON__. En
 
 > *Explicar qué es un filtro y en qué parte de Compass deben realizarse.*
 
-- [**`EJEMPLO 3`**](Ejemplo-03/Readme.md)
+- [**`EJEMPLO 4`**](Ejemplo-04/Readme.md)
 - [**`RETO 2`**](Reto-02/Readme.md)
 
 ---
