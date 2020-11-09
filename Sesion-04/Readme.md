@@ -63,13 +63,13 @@ En __MongoDB__ los datos son almacenados en *colecciones* que incluyen documento
 <img src="imagenes/imagen1.png" align="right" height="200" width="200">
 
 - Bases de Datos No Relacional
+- Modelo Orientado a Documentos
 - Formato JSON
 - Colecciones que contienen documentos
 - Documentos de esquema libre
 - Más localidad, menos joins
 - Denormalizada, hay redundancia
 - Documentos son similares a objetos
-- Ejemplos: MongoDB, Cassandra, Redis, Oracle NoSQL, Amazon DynamoDB, CouchDB, Cloud Firestore
     
 ---
 #### <ins>Colecciones, Documentos y Proyecciones</ins>
