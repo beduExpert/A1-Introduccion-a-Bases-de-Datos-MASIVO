@@ -45,6 +45,8 @@ Usando la colección `sample_airbnb.listingsAndReviews`, mediante el uso de agre
    ```
    
    ![imagen](imagenes/s5r32.png)
+   
+Otra opción sería utilizando la etapa `$count`, que te devuelve el número de documentos que la etapa ha recibido como input.
 
 </p>
 </details>
